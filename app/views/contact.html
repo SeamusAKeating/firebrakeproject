@@ -1,0 +1,305 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Contact GOV.UK</title>
+
+    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-2775f99eaec64ff8121bfbfb3eb67b0c2b4b7c3fc78d25da30e12db2a09d30d6.css" crossorigin="anonymous" integrity="sha256-J3X5nq7GT/gSG/v7PrZ7DCtLfD/HjSXaMOEtsqCdMNY=">
+<!--<![endif]-->
+    <!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie6-5bb08c355a12ac38b0ac9d2446da122ec0f81c78e02dcd2a98766f53c23793c8.css" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie7-be1ea757827710f20eae59ae3ebfd172b7dbeabb171a79945ba610947eebb3cc.css" /><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie8-5ab4d0c7b42f2bf10f8c7aadf331a11f7399be832b0ee2c68c94071195a1e36e.css" /><![endif]-->
+    <link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css" crossorigin="anonymous" integrity="sha256-EHZRlSHC//u/das7DTsy7i2WrH6XePHN+sF3Hu/RocA=">
+
+    <!--[if IE 8]><link rel="stylesheet" media="all" href="https://assets.publishing.service.gov.uk/static/fonts-ie8-f5e3c18a96ecb0f37246556a27330202d6e18feffa05a3b67825024609629ac8.css" /><![endif]-->
+    <!--[if gte IE 9]><!--><link rel="stylesheet" media="all" href="https://assets.publishing.service.gov.uk/static/fonts-5ff8c53913434afd0072a480d7cfca67cace4c8d03f6ef96b78a4455728ce745.css" crossorigin="anonymous" integrity="sha256-X/jFORNDSv0AcqSA18/KZ8rOTI0D9u+Wt4pEVXKM50U=">
+<!--<![endif]-->
+    <!--[if lt IE 9]><script src="https://assets.publishing.service.gov.uk/static/ie-d31395a9030b68584b0a191af4b68cb7bef1bb6024898c719fb61241f9e18d0e.js" crossorigin="anonymous" integrity="sha256-0xOVqQMLaFhLChka9LaMt77xu2AkiYxxn7YSQfnhjQ4="></script><![endif]-->
+
+    <link rel="shortcut icon" href="https://assets.publishing.service.gov.uk/static/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon">
+    <link rel="mask-icon" href="https://assets.publishing.service.gov.uk/static/gov.uk_logotype_crown-de738c3fcce8ce2a91b67e89787090dc24a5cda0275ab6b75f6226c5b9619d3d.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-167x167-181e404a50c572923285fb83f0fbd78da6b4e38e3ce52f8e6b8e29da8586450a.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-152x152-02457fcdcee8d309276305af2233d41bfb8fd055e855727d355e61bce7ffa9bb.png">
+    <link rel="apple-touch-icon" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-a318f305290c523aed80082456175b46c95350c0eeac93f42e78a71c7a55544e.png">
+
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://assets.publishing.service.gov.uk/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+
+      <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/static-45024e005137e13a4a7a5a0a8a5efe946cd591927b6c5c104c202d854afba15f.css" crossorigin="anonymous" integrity="sha256-RQJOAFE34TpKeloKil7+lGzVkZJ7bFwQTCAthUr7oV8=">
+<!--<![endif]-->
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/static-ie6-b2c1e640149684a89264446cbe4bed1677991256ce6eecc295d7e5a4ea19dfcc.css" /><script>var ieVersion = 6;</script><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/static-ie7-4ffccadd4ee68836e5f2071041ba8bc64d096545f1e24001a5015d69506e27dd.css" /><script>var ieVersion = 7;</script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/static-ie8-e3e60ab8d5afcb9a708ab1439082fe396e223c2921a4e45e78f967083d24277f.css" /><script>var ieVersion = 8;</script><![endif]-->
+
+<link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/static-print-216a0b04b274525fd5078472c499c0e2c502dc171bf2d7e5d0aa68ea29bd33da.css" crossorigin="anonymous" integrity="sha256-IWoLBLJ0Ul/VB4RyxJnA4sUC3Bcb8tfl0Kpo6im9M9o=">
+
+
+  <link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/feedback/feedback-36c1bf85f433e31762d361b543628f3da6daf418b1763859f2da886c8d4aab30.css" crossorigin="anonymous" integrity="sha256-NsG/hfQz4xdi02G1Q2KPPaba9BixdjhZ8tqIbI1KqzA=">
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/feedback/feedback-ie6-94c7fba43ef3521c3913fb72839d31d5c870bb43d49f9c44c781240b987bc1dc.css" /><![endif]--><meta name="govuk:rendering-application" content="feedback">
+</head>
+
+<body class="full-width js-enabled" data-gr-c-s-loaded="true" style="">
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+        <p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>
+
+            
+
+  <form id="search" class="site-search" action="/search" method="get" role="search">
+    <div class="content">
+      <label for="site-search-text">Search</label>
+      <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus">
+      <input class="submit" type="submit" value="Search">
+    </div>
+  </form>
+
+        </div>
+
+      </div>
+    </header>
+
+      <div id="user-satisfaction-survey-container"></div>
+
+
+    <div id="global-header-bar"></div>
+
+      <div id="wrapper">
+      <main id="content" role="main" class="group category-page">
+
+<div class="govuk-breadcrumbs " data-module="track-click">
+  <ol>
+
+    <li class="">
+        <a data-track-category="breadcrumbClicked" data-track-action="1" data-track-label="/" data-track-options="{&quot;dimension28&quot;:&quot;2&quot;,&quot;dimension29&quot;:&quot;Home&quot;}" class="" aria-current="false" href="/">Home</a>
+    </li>
+
+    <li class="">
+        <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/contact" data-track-options="{&quot;dimension28&quot;:&quot;2&quot;,&quot;dimension29&quot;:&quot;Contact&quot;}" class="" aria-current="false" href="/contact">Contact</a>
+    </li>
+  </ol>
+</div>
+
+
+        <header class="page-header group">
+          <div class="full-width">
+            <h1>Contact GOV.UK</h1>
+          </div>
+        </header>
+
+        <div class="contact-container full-width group">
+
+<div class="inner">
+  <form class="contact-form" action="/contact/govuk" accept-charset="UTF-8" method="post">
+<input name="utf8" type="hidden" value="✓">
+    <input type="hidden" name="contact[url]" id="contact_url" value="https://www.gov.uk/contact/govuk">
+
+    <p>Remember, the <a href="/help">help pages</a> have answers to the most common questions about the GOV.UK website. You can use the form below to ask a question, report a problem or suggest an improvement we can make to GOV.UK.</p>
+
+    <div class="visually-hidden" aria-hidden="true">
+  <label for="val">Ignore if you're not a robot</label>
+  <input type="text" tabindex="-1" autocomplete="off" id="val" name="contact[val]">
+</div>
+
+
+
+
+    <fieldset id="location">
+      <legend>What's it to do with?</legend>
+        <label class="selectable selection-button-radio">
+          <input type="radio" name="contact[location]" id="location-all" value="all" checked=""> The whole site
+        </label>
+
+        <p>
+
+      <label class="selectable selection-button-radio selected">
+        <input type="radio" name="contact[location]" id="location-specific" value="specific"> A specific page
+      </label>
+
+        <label for="link" class="visuallyhidden">Enter URL or name of page</label>
+        <input type="text" name="contact[link]" id="link" placeholder="Enter URL or name of page" value="">
+        </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Can you provide more detail?</legend>
+      <div class="group">
+        <p>For example if you were searching for something, what did you type into the search box?</p>
+          <p class="warning-message">Don't include personal or financial information, eg your National Insurance number or credit card details.</p>
+
+
+        <label for="textdetails" class="visuallyhidden">Detail</label>
+        <textarea name="contact[textdetails]" class="full-size counted" id="textdetails" required="" aria-required="true"></textarea>
+
+
+        <p id="textdetailscounter" class="hint" aria-live="polite" aria-atomic="false">(Limit is 1200 characters)</p>
+      </div>
+    </fieldset>
+
+    <fieldset id="contact-details">
+      <legend>Do you want a reply?</legend>
+      <p>If you'd like us to get back to you, please leave your details below.</p>
+
+        <p class="group">
+
+        <label for="name">Your name</label>
+        <input name="contact[name]" id="name" type="text" class="full-name" value="">
+      </p>
+
+        <p class="group">
+
+        <label for="email">Your email address</label>
+        <input name="contact[email]" id="email" type="email" class="email" value="">
+        <span class="hint">We'll only use this to reply to your message.</span>
+
+      </p>
+    </fieldset>
+
+    <p class="action group">
+      <button type="submit" class="button">Send message</button>
+    </p>
+<input type="hidden" name="contact[javascript_enabled]" value="true"><input type="hidden" name="contact[referrer]" value="https://www.gov.uk/service-manual/design/feedback-pages"></form>
+</div>
+
+        </div>
+      </main>
+    <div class="report-a-problem-toggle-wrapper js-footer"><p class="report-a-problem-toggle"><a href="" class="js-report-a-problem-toggle">Is there anything wrong with this page?</a></p></div><div class="report-a-problem-container">
+  <div class="report-a-problem-inner">
+    <div class="report-a-problem-content">
+      <h2>Help us improve GOV.UK</h2>
+      <form accept-charset="UTF-8" action="/contact/govuk/problem_reports" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+        <input id="url" name="url" type="hidden" value="https://www.gov.uk/contact/govuk">
+
+          <input id="source" name="source" type="hidden" value="">
+
+
+          <input id="page_owner" name="page_owner" type="hidden" value="">
+
+
+        <p>Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+        <label for="what_doing">What you were doing</label>
+        <input id="what_doing" name="what_doing" type="text">
+
+        <label for="what_wrong">What went wrong</label>
+        <input id="what_wrong" name="what_wrong" type="text">
+
+        <div class="button-wrapper">
+          <button name="commit" type="submit" class="button">Send</button>
+        </div>
+      <input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="https://www.gov.uk/service-manual/design/feedback-pages"></form>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+            <div class="footer-categories">
+      <div class="footer-explore">
+        <h2>Services and information</h2>
+
+        <ul>
+          <li><a href="/browse/benefits">Benefits</a></li>
+          <li><a href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+          <li><a href="/browse/business">Business and self-employed</a></li>
+          <li><a href="/browse/childcare-parenting">Childcare and parenting</a></li>
+          <li><a href="/browse/citizenship">Citizenship and living in the UK</a></li>
+          <li><a href="/browse/justice">Crime, justice and the law</a></li>
+          <li><a href="/browse/disabilities">Disabled people</a></li>
+          <li><a href="/browse/driving">Driving and transport</a></li>
+        </ul>
+        <ul>
+          <li><a href="/browse/education">Education and learning</a></li>
+          <li><a href="/browse/employing-people">Employing people</a></li>
+          <li><a href="/browse/environment-countryside">Environment and countryside</a></li>
+          <li><a href="/browse/housing-local-services">Housing and local services</a></li>
+          <li><a href="/browse/tax">Money and tax</a></li>
+          <li><a href="/browse/abroad">Passports, travel and living abroad</a></li>
+          <li><a href="/browse/visas-immigration">Visas and immigration</a></li>
+          <li><a href="/browse/working">Working, jobs and pensions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-inside-government">
+        <h2>Departments and policy</h2>
+
+        <ul>
+          <li><a href="/government/how-government-works">How government works</a></li>
+          <li><a href="/government/organisations">Departments</a></li>
+          <li><a href="/world">Worldwide</a></li>
+          <li><a href="/government/policies">Policies</a></li>
+          <li><a href="/government/publications">Publications</a></li>
+          <li><a href="/government/announcements">Announcements</a></li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+              <h2 class="visuallyhidden">Support links</h2>
+<ul>
+  <li><a href="/help">Help</a></li>
+  <li><a href="/help/cookies">Cookies</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help/terms-conditions">Terms and conditions</a></li>
+  <li><a href="/cymraeg" lang="cy" hreflang="cy">Rhestr o Wasanaethau Cymraeg</a></li>
+  <li>Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
+</li>
+</ul>
+
+
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="https://assets.publishing.service.gov.uk/static/govuk-template-d4ba5ab8f60c9df5c733e7d3c7c469ff93dc6b64d2b2a8feb94afa8f77c66193.js" crossorigin="anonymous" integrity="sha256-1LpauPYMnfXHM+fTx8Rp/5Pca2TSsqj+uUr6j3fGYZM="></script>
+
+      <script src="https://assets.publishing.service.gov.uk/static/libs/jquery/jquery-1.12.4-395e36e8b50840dbe9f754bd87c5098de66e33f81061d9452420dbdb9ee760f1.js" crossorigin="anonymous" integrity="sha256-OV426LUIQNvp91S9h8UJjeZuM/gQYdlFJCDb257nYPE="></script>
+<script src="https://assets.publishing.service.gov.uk/static/application-095938d92a56d5351b98bfd89f642912f4a8048c22b2f590e7646e712f5718dc.js" crossorigin="anonymous" integrity="sha256-CVk42SpW1TUbmL/Yn2QpEvSoBIwisvWQ52RucS9XGNw="></script>
+<script src="https://assets.publishing.service.gov.uk/static/surveys-cbe241272b52acc0976b7d6a8c90bf57a5ce5cddb4e1ec9253f96d4bbe89027c.js" crossorigin="anonymous" integrity="sha256-y+JBJytSrMCXa31qjJC/V6XOXN204eySU/ltS76JAnw="></script>
+
+
+
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  <script src="https://assets.publishing.service.gov.uk/feedback/feedback-5c1d474152e2c592276f2228fc9bfde32e1d67b0d29fb7201299eeac3a1ef271.js" crossorigin="anonymous" integrity="sha256-XB1HQVLixZInbyIo/Jv94y4dZ7DSn7cgEpnurDoe8nE="></script>
+
+
+</body>
+
+{% endblock %}
